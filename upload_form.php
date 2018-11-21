@@ -24,7 +24,7 @@ function progressHandler(event){
 	_("progressBar").value = Math.round(percent);
 	progressBar.style.width = Math.round(percent)+"%";
 	_("status").innerHTML = Math.round(percent)+"%";
-	
+
 }
 function completeHandler(event){
 	_("status").innerHTML = event.target.responseText;
@@ -41,17 +41,17 @@ function abortHandler(event){
 </script>
 </head>
 <body>
-	</br>
-	</br>
-	<input type="file" name="file1" id="file1"><br>
-	<input type="button" value="Upload File" onclick="uploadFile()">
-	<br/> 
-	<div class="progress"> 
-	    <div class="progress-bar progress-bar-primary" id="progressBar" style="width:0%;"> <span id="status"></span></div>
-	</div>
-	<br/>
-	<h3 id="status"></h3>
-	<p id="loaded_n_total"></p>
-	<br/>
+</br>
+</br>
+<input type="file" name="file1" id="file1"><br>
+<input type="button" value="Upload File" onclick="uploadFile()">
+<br/> 
+<div class="progress"> 
+    <div class="progress-bar progress-bar-primary" id="progressBar" style="width:0%;"><span id="status"></span></div>
+</div>
+<br/>
+<h3 id="status"></h3>
+<p id="loaded_n_total"></p>
+<br/>
 </body>
 </html>
